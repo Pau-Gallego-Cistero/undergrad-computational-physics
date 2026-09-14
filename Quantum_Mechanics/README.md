@@ -16,11 +16,13 @@ $$\hat{H}\psi = \left( -\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + V(x) \right)\psi = 
 
 ## 📂 Included Scripts
 
-| Script | Potential $V(x)$ | Method |
-| :--- | :--- | :--- |
-| **`infinite_potential_well.py`** | Particle in an infinite box ($V=0$ inside, $\infty$ outside) | Analytical vs. Finite Difference comparison |
-| **`quantum_dots_finite_well.py`** | Finite square well (Quantum Dot model, $V_0 = 20\text{ eV}$) | Matrix diagonalization & bound state filtering |
-| **`quantum_harmonic_oscillator.py`** | Parabolic potential $V(x) = \frac{1}{2}m\omega^2 x^2$ | Numerical diagonalization vs. theoretical $E_n = \hbar\omega(n + 1/2)$ |
+| Script | Potential $V(x)$ | Method | Highlights |
+| :--- | :--- | :--- | :--- |
+| **`particle_in_a_box_analytical.py`** | Infinite Well ($0 \le x \le L$) | Analytical | Exact closed-form solutions, energy scaling $\propto n^2$, and probability density $|\psi(x)|^2$ filling. |
+| **`particle_in_a_box_numerical.py`** | Infinite Well ($0 \le x \le L$) | Finite Differences | Discrete tridiagonal Hamiltonian benchmarking numerical roots against analytical spectra. |
+| **`quantum_dots_finite_well.py`** | Finite Well ($V_0 = 20\text{ eV}$) | Finite Differences | Models electron confinement in semiconductor quantum dots; filters bound states ($E < V_0$) and plots energy-offset wavefunctions. |
+| **`quantum_harmonic_oscillator.py`** | Parabolic ($\frac{1}{2}m\omega^2 x^2$) | Finite Differences | Equispaced energy ladder $E_n = \hbar\omega(n + 1/2)$, parity analysis of odd/even eigenstates. |
 
 ---
+
 

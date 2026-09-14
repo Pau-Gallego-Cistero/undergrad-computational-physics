@@ -24,5 +24,3 @@ $$\hat{H}\psi = \left( -\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + V(x) \right)\psi = 
 
 ---
 
-## 👥 Collaborators
-* **Quantum Harmonic Oscillator:** Developed with Marco Novellini and Nacho Fons.

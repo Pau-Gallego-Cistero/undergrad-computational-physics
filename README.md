@@ -16,10 +16,9 @@ This repository highlights the application of numerical methods to solve problem
 
 | Category | Topics Covered | Key Methods |
 | :--- | :--- | :--- |
-| **[🌌 Quantum_Mechanics](./Quantum_Mechanics/)** | Particle in a box, Quantum Dots, Time evolution | Eigenvalue problems, wave packet propagation |
-| **[🔦 Optics_and_Waves](./Optics_and_Waves/)** | Monte Carlo optics, Harmonic oscillators | Stochastic ray tracing, ODE integration |
-| **[🎲 Statistical_Physics](./Statistical_Physics/)** | Metropolis-Hastings algorithm, Fourier analysis | Monte Carlo integration, spectral decomposition |
-| **[🎮 Interactive_Simulations](./Interactive_Simulations/)** | 2D kinematic engine (Pong) | Real-time collision detection, Euler integration |
+| **[🌌 Quantum_Mechanics](./Quantum_Mechanics/)** | Particle in a Box, Quantum Dots, Harmonic Oscillator | Finite difference discretization, tridiagonal matrix diagonalization (`eigh`) |
+| **[🔭 Astrophysics_and_Cosmology](./Astrophysics_and_Cosmology/)** | Gravitational instability, Cosmic structure formation | Euler integration of linear perturbations with Hubble friction in an expanding FLRW universe |
+| **[🎮 Interactive_Simulations](./Interactive_Simulations/)** | 2D kinematic engine (Pong) | Real-time elastic collisions, boundary conditions, discrete time-stepping |
 
 ---
 *Each directory contains source code, mathematical background, and graphical outputs.*

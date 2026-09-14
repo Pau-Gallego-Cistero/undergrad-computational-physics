@@ -1,0 +1,104 @@
+#-----------
+#ENTREGA DE PYTHON: Partícula en una Caja Unidimensional de la mecánica cuántica
+#-----------
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+#-----------
+#DEFINIMOS LAS CONSTANTES DEL PROBLEMA:
+#-----------
+h = 1
+m = 1
+L = 1
+N = 100 #Puntos que quiero que tenga el sistema entre 0 y L.
+x = np.linspace(0, L, N+1) #Discretizar
+print('QUEREMOS CALCULAR LOS NIVELES DE ENERGIA DE LA FUNCIÓN DE ONDA (ψ), para ello mostraremos todos los puntos discretos donde calcular la grafica y probabilidad, luego los niveles de energia y mostraremos los gráficos por pantalla:')
+print('----------------------------------------------------------------------------------------------------')
+print("Puntos de la malla: ",x) #Los puntos de la malla representan los puntos discretos en la caja donde se va a calcular y graficar ψ y la probabilidad.
+n_levels = np.arange(1, 11) #Elegir los niveles de energia
+print('------------------------------------------------------------------')
+print("Niveles de energía del sistema: ",n_levels)
+
+#-----------
+#DEFINIMOS LAS FUNCIÓN DE ONDA:
+#-----------
+def psi(n, x): #Def. una función
+    return np.sqrt(2/L) * np.sin((n * np.pi * x)/L)
+
+def ener(n,h,m,L): #Energia partic. en la caja
+    return (np.pi**2 * h**2 * n**2)/(2 * m * L**2)
+print('Notese que usamos valores discretos ya que el ordenador no puede computar valores infinitos para (ψ)')
+print('------------------------------------------------------------------')
+for i in n_levels:
+    # 1. Calculamos la función de onda como antes
+    func = psi(i, x) # No es necesario el bucle for interno, numpy lo hace por nosotros
+    
+    # 2. Calculamos la energía para el nivel actual 'i'
+    energia_nivel = ener(i, h, m, L)
+    
+    # 3. Imprimimos el resultado para verlo en la consola
+    print(f"Nivel n={i}, Energía E={energia_nivel:.4f}") #.4f para 4 decimales
+    
+    # 4. Creamos el gráfico y le añadimos un título informativo
+    plt.plot(x, func) # Usamos plot en vez de scatter para una línea contínua
+    plt.title(f'Función de onda n={i} (E = {energia_nivel:.2f})')
+    plt.xlabel('(x)')
+    plt.ylabel('Amplitud (ψ)')
+    plt.grid(True) #Añade una cuadrícula o rejilla al fondo del gráfico.
+    plt.axhline(0, color='black', linewidth=0.5) # Añade línea en y=0
+    plt.show()
+
+
+#GRAF. COMBINAT
+
+
+n_levels3 = np.arange(1, 11, 2) #imaprells
+for i in n_levels3:
+    func = psi(i, x)
+    
+    plt.plot(x, func, label=f'n={i}')
+
+plt.title('Funciones de Onda 5 primeros Niveles de Energía')
+plt.xlabel('(x)')
+plt.ylabel('Amplitud (ψ)')
+plt.grid(True)
+plt.axhline(0, color='black', linewidth=0.5)
+plt.legend()
+plt.show()
+
+
+#-----------
+#COMO DE PROBABLE PARTICULA ALREDEDOR X?
+#-----------
+
+
+print('------------------------------------------------------------------')
+print('Lo que tiene significado físico es |ψ|^2, que representa la probabilidad de encontrar la partícula en una posición x; ')
+print('hemos tomado solo el gráfico para  ')
+
+n_levels2 = np.array([1, 2, 9, 10]) #Elegir los niveles de energia
+
+for i in n_levels2:
+    func = psi(i, x)
+    prob_density = func**2
+    
+    # 2. Calculamos la energía para el nivel actual 'i'
+    energia_nivel = ener(i, h, m, L)
+    
+    # 3. Creamos el gráfico de la densidad de probabilidad
+    plt.plot(x, prob_density, color='turquoise')
+    plt.fill_between(x, prob_density, color='turquoise', alpha=0.3)
+    plt.title(f'Densidad de Probabilidad para n={i} (E = {energia_nivel:.2f})')
+    plt.xlabel('(x)')
+    plt.ylabel('(|ψ|²)')
+    plt.grid(True)
+    plt.axhline(0, color='black', linewidth=0.5)
+    plt.show()
+    
+    # 3. Imprimimos el resultado para verlo en la consola
+    print(f"Nivel n={i}") #.4f para 4 decimales
+
+print('para que sea mas visual')
+print('------------------------------------------------------------------')
+print('Proceso finalizado.')

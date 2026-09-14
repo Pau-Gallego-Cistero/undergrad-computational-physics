@@ -6,7 +6,7 @@ This repository highlights the application of numerical methods to solve problem
 
 ---
 
-## 🛠️ Languages & Tools
+## Languages & Tools
 * **Python**
 * **Core Topics:** Quantum Confinement, Monte Carlo Methods, Wave Propagation, Differential Equations
 

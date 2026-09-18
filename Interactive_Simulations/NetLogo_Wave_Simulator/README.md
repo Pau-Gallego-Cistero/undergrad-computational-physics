@@ -2,9 +2,10 @@
 
 This project is an interactive, agent-based simulation of wave propagation in a 1D elastic medium, developed using **NetLogo**. 
 
-As part of my exploration into multi-agent environments, I took an open-source foundational code for agent physics and heavily modified it to create a visualizer for driven harmonic oscillators. Instead of traditional array iterations, this model uses "turtles" acting as coupled oscillators that transfer energy to their neighbors, simulating a physical string.
+As part of our exploration into multi-agent environments, we took an open-source foundational code for agent physics and heavily modified it to create a visualizer for driven harmonic oscillators. Instead of traditional array iterations, this model uses "turtles" acting as coupled oscillators that transfer energy to their neighbors, simulating a physical string.
 
-![Wave Simulation Demo](./wave_demo.gif) *(Note: Upload a gif and uncomment this line!)*
+![Wave Simulation Demo](./wave_demo.gif) 
+*(Note: If you dragged and dropped an .mp4 video directly into GitHub, delete this line and leave the link GitHub generated for you!)*
 
 ## ⚙️ How it Works
 * **The Driver:** A central agent (green) acts as the driver, oscillating according to a sine function: `y = amplitude * sin(frequency * time)`.
@@ -35,3 +36,8 @@ By tweaking the GUI sliders, the system can reach different steady states and re
 2. Open `coupled_oscillators_wave.nlogo`.
 3. Click `setup`, then `go`.
 4. Adjust the sliders in real-time to observe phase changes and damping effects.
+
+## 👥 Authors
+* **Pau Gallego Cisteró**
+* **Alvaro Ubierna**
+* **Diego Lopez**

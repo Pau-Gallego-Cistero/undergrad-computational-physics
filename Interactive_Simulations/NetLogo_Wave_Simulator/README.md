@@ -4,10 +4,9 @@ This project is an interactive, agent-based simulation of wave propagation in a 
 
 As part of our exploration into multi-agent environments, we took an open-source foundational code for agent physics and heavily modified it to create a visualizer for driven harmonic oscillators. Instead of traditional array iterations, this model uses "turtles" acting as coupled oscillators that transfer energy to their neighbors, simulating a physical string.
 
-![Wave Simulation Demo](./wave_demo.gif) 
-*(Note: If you dragged and dropped an .mp4 video directly into GitHub, delete this line and leave the link GitHub generated for you!)*
+https://github.com/user-attachments/assets/9d3c8c00-396f-4473-a615-6bdf17abd2a5
 
-## ⚙️ How it Works
+## How it Works
 * **The Driver:** A central agent (green) acts as the driver, oscillating according to a sine function: `y = amplitude * sin(frequency * time)`.
 * **The Medium:** The rest of the agents (white) act as a coupled elastic medium. They calculate their vertical velocity based on the height difference with their immediate left and right neighbors, applying a damping/friction factor.
 

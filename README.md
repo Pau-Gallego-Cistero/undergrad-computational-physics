@@ -1,6 +1,6 @@
 # Undergraduate Computational Physics Portfolio
 
-A curated collection of computational physics models, numerical simulations, and theoretical exercises developed during my Physics degree at **Universidad Europea de Valencia**.
+A curated collection of computational physics models, numerical simulations, and theoretical exercises developed during my Physics degree, on my own and encouraged by teachers.
 
 This repository highlights the application of numerical methods to solve problems in quantum mechanics, wave optics, statistical mechanics, and classical dynamics.
 

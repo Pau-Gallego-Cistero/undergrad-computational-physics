@@ -9,7 +9,7 @@ This repository highlights the application of numerical methods to solve problem
 ## Languages & Tools
 * **Python**
 * **NetLogo** (Agent-Based Modeling)
-* **Core Topics:** Quantum Confinement, Monte Carlo Methods, Wave Propagation, Differential Equations, Coupled Oscillators
+* **Core Topics:** Wave Propagation, Differential Equations, Coupled Oscillator, Monte Carlo Methods
 
 ---
 
@@ -17,7 +17,6 @@ This repository highlights the application of numerical methods to solve problem
 
 | Category | Topics Covered | Key Methods |
 | :--- | :--- | :--- |
-| **[🌌 Quantum_Mechanics](./Quantum_Mechanics/)** | Particle in a Box, Quantum Dots, Harmonic Oscillator, Quantum Tunneling | Finite difference discretization, tridiagonal matrix diagonalization (`eigh`), exact analytical scattering solutions |
 | **[🔭 Astrophysics_and_Cosmology](./Astrophysics_and_Cosmology/)** | Gravitational instability, Cosmic structure formation | Euler integration of linear perturbations with Hubble friction in an expanding FLRW universe |
 | **[🎮 Interactive_Simulations](./Interactive_Simulations/)** | 2D kinematic engine (Pong), **1D Wave Propagation (NetLogo)** | Real-time elastic collisions, **Agent-based modeling for coupled oscillators**, discrete time-stepping |
 

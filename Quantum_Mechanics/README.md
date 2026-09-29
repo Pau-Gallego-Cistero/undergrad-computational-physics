@@ -22,6 +22,7 @@ $$\hat{H}\psi = \left( -\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + V(x) \right)\psi = 
 | **`particle_in_a_box_numerical.py`** | Infinite Well ($0 \le x \le L$) | Finite Differences | Discrete tridiagonal Hamiltonian benchmarking numerical roots against analytical spectra. |
 | **`quantum_dots_finite_well.py`** | Finite Well ($V_0 = 20\text{ eV}$) | Finite Differences | Models electron confinement in semiconductor quantum dots; filters bound states ($E < V_0$) and plots energy-offset wavefunctions. |
 | **`quantum_harmonic_oscillator.py`** | Parabolic ($\frac{1}{2}m\omega^2 x^2$) | Finite Differences | Equispaced energy ladder $E_n = \hbar\omega(n + 1/2)$, parity analysis of odd/even eigenstates. |
+| **`quantum_tunneling.py`** | Finite Barrier ($V_0 > E$) | Analytical | Computes transmission probability $T$, demonstrates log-scale exponential decay over barrier width $L$, and generates 2D $(L, V_0)$ colormaps with contour levels. |
 
 ---
 
